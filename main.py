@@ -368,14 +368,15 @@ class ImageSegmentation:
         np.save("imgs_arr.npy", imgs)
         np.save("preds.npy", preds)
         np.save("segs_arr.npy", segs)
-        print("checkpoint")
+        print("files saved ...")
 
 if __name__ == "__main__":
-    training = False
+    training = True
     img_seg = ImageSegmentation()
     model = img_seg.build_model()
+    device = "cuda:0" if torch.cuda.is_available() else "cpu"
+
     if "final_model.pt" in os.listdir(abspath("")):
-        device = "cuda:0" if torch.cuda.is_available() else "cpu"
         model.load_state_dict(torch.load('final_model.pt', map_location=device))
     if training:
         img_seg.train(model)
