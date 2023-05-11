@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brain Tumor Segmentation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+</head>
+<body>
+   <h1>Brain Tumor Segmentation</h1>
+
+   <div>
+    Upload the MRI file... 
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" id="img_file" name="img_file">
+        <input type="submit">
+    </form>
+   </div>
+</body>
+</html>
