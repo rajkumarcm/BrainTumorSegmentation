@@ -1,3 +1,1 @@
-If you do not want to re-train the entire model, it is fine. I have in this folder also included the weights file that was saved post the training.
-
-It is called final_model.py
+UNet segmentation model weights are stored in final_model.py. You could use this file with main.py to segment MRI brain scan images.
