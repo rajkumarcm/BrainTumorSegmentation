@@ -6,7 +6,7 @@ This repository contains implementation of the 3D-UResNet[1] model and was train
 ### Original Image  
 <img alt="MRI Image and the segmented image" src="image_animation.gif" width="400" height="450" style="max-width: 100%;">
 
-### Predicted Image  
+### Segmented Image  
 <img alt="MRI Image and the segmented image" src="prediction_animation.gif" width="400" height="450" style="max-width: 100%;">
 
 ## References  
